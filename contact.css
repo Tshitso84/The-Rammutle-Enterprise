@@ -1,0 +1,151 @@
+body {
+
+    background-image: url(Images/ricardo-gomez-angel-WfeKQT3Wf0A-unsplash.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    background-color: #003049;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.button {
+    background-color: #ffbc42;
+    display: inline-flex
+}
+
+.button:hover {
+
+    background-color: #ffbd4285;
+}
+
+.button:active {
+    background-color: rgb(50, 205, 50);
+}
+
+
+#navbar {
+    background-color: #669bbc2c;
+    color: #fff;
+
+}
+
+#navbar ul {
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li {
+    display: inline;
+}
+
+#navbar a {
+    color: #ffbc42;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+#showcase {
+    min-width: 80px;
+    min-height: 200px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase h1 {
+    font-size: 70px;
+    text-shadow: 2px 4px 0 #ffffff3f;
+    line-height: 1.6em;
+    padding-top: 30px;
+}
+
+/*
+#main {
+    float: left;
+    width: 45%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+#side-bar {
+    float: right;
+    width: 35%;
+    padding: 20px;
+    color: #fff;
+    box-sizing: border-box;
+
+
+}
+*/
+
+.my-form {
+    padding: 20px;
+
+
+}
+
+.my-form .form-group {
+    padding-bottom: 15px;
+}
+
+.my-form label {
+    display: block;
+}
+
+.my-form input[type="text"],
+.my-form textarea {
+    padding: 8px;
+    width: 100%;
+
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.item {
+    width: 400px;
+    margin: 20px;
+    border-radius: 15px;
+    padding: 15px 20px;
+    color:#ffffff;
+}
+
+.flex-container h2 {
+    color: #ffbc42;
+}
+
+.contact {
+    font-weight: bold;
+    padding: 70px;
+    color: #ffbc42;
+}
+
+#main-footer {
+    background: #4279a11c;
+    color: #ffbc42;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+@media(max-width:460){
+    .flex-container{
+        display: block;
+    }
+    #showcase h1{
+        font-size: 50px;
+    }
+}

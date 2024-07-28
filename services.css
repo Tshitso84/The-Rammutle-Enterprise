@@ -1,0 +1,92 @@
+body {
+    background-image: url(ricardo-gomez-angel-WfeKQT3Wf0A-unsplash.jpg);
+    background-position: center bottom;
+    background-size: cover;
+    background-color: #003049;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+}
+
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#navbar {
+    background-color: #669bbc2c;
+    color: #fff;
+
+}
+
+#navbar ul {
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li {
+    display: inline;
+}
+
+#navbar a {
+    color: #ffbc42;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+#Showcase {
+    min-height: 300px;
+    text-align: center;
+    color: #ffffff;
+}
+
+#Showcase h1 {
+    font-size: 70px;
+    text-shadow: 2px 4px 0 #ffffff3f;
+    line-height: 1.6em;
+    padding-top: 30px;
+}
+
+/*#Showcase p{
+    font-size: larger;
+    font-weight: bolder;
+}*/
+.flex-container {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+.item {
+    width: 400px;
+    height: 400px;
+    border-radius: 7px;
+    box-shadow: #669bbc21 3px 5px 0px;
+    padding: 15px 20px;
+    background-color:#669bbc1e;
+    color: #FFFFFF;
+}
+.item h3{
+    color: #ffbc42;
+}
+#main-footer {
+    background: #4279a11c;
+    color:#ffbc42;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+@media(max-width:1550px){
+.flex-container{display: grid;}
+}
+
+@media(max-width:520px){
+    .figure{
+        width: 200px;
+    }
+    }

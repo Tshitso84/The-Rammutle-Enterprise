@@ -8,6 +8,7 @@ html {
     scroll-padding-top: "";
     overscroll-behavior: none;
     scroll-behavior: smooth;
+    color-scheme:dark light;
 }
 
 :root {

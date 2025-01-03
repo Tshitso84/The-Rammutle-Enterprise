@@ -305,7 +305,7 @@ nav a {
     margin-bottom: 1rem;
     font-family: 'Maven Pro', sans-serif;
     word-wrap: break-word;
-    max-width: 100%;
+    max-width: 1200px;
 }
 
 .hero-text span {
@@ -638,7 +638,7 @@ p {
     background: linear-gradient(35deg, #353535, #000, #2e2e2e);
 
     @media (max-width: 992px) {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         padding: 2rem 5%;
         gap: 1.5rem;
     }
@@ -717,7 +717,7 @@ p {
         width: 100%;
 
         @media (max-width: 992px) {
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns:1fr;
             gap: 1.5rem;
         }
 
@@ -978,7 +978,7 @@ p {
 /* Responsive Adjustments */
 @media screen and (max-width: 1024px) {
     .flex-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         padding: 2rem 3%;
         gap: 1.5rem;
     }
@@ -1031,26 +1031,13 @@ p {
 .banner {
     background: linear-gradient(35deg, #353535, #000, #2e2e2e);
     color: #fff;
-    display: flex;
-    align-self: center;
-    flex-wrap: wrap ;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     padding: 2rem 5%;
     box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.1);
     gap: 1rem;
 
 
-    & .banner-content {
-        border-left: 1px solid #616161;
-        padding: 15px;
-        min-width: 200px;
-        display: flex;
-        flex: 1;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
 
     & .banner-content:nth-child(1) {
         border: none;
@@ -1066,11 +1053,24 @@ p {
         }
     }
 }
+.banner-content {
+    border-left: 1px solid #616161;
+    padding: 15px;
+    min-width: 200px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
 
 /* Responsive Adjustments */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
     .banner {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
         padding: 2rem 1rem;
     }
 
@@ -1081,6 +1081,9 @@ p {
     }
 
     .banner-content:first-child {
+        border-top: none;
+    }
+    .banner-content:nth-child(2) {
         border-top: none;
     }
 
@@ -1094,6 +1097,17 @@ p {
 }
 
 @media screen and (max-width: 480px) {
+
+    .banner {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+    }
+    .banner-content:nth-child(2) {
+        border-top: 1px solid #616161;
+    }
+
+
     .banner h2 {
         font-size: 1.75rem;
     }
@@ -1218,7 +1232,7 @@ p {
 
     @media screen and (max-width: 1024px) {
         .banner-content-container {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
         }
 
         .banner-text h2 {
